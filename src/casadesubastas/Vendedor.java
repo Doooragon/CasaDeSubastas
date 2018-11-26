@@ -1,14 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package casadesubastas;
 
+import java.util.ArrayList;
+
 /**
- *
- * @author Hugo
+ * @author Hugo Rodríguez
  */
 public class Vendedor {
-    
+    public String nombre;
+    public int ganancias;
+    public ArrayList<Producto> productos;
+
+    public Vendedor(String nombre, int ganancias) {
+        this.nombre = nombre;
+        this.ganancias = ganancias;
+    }
 }

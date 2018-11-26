@@ -1,8 +1,7 @@
 package casadesubastas;
 
 /**
- *
- * @author Hugo
+ * @author Hugo Rodríguez
  */
 public class CasaDeSubastas {
 
@@ -10,7 +9,7 @@ public class CasaDeSubastas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CasaDeSubastas cs = new CasaDeSubastas();
     }
     
 }
