@@ -10,9 +10,8 @@ public class Vendedor {
     private int ganancias;
     private ArrayList<Producto> productos;
 
-    public Vendedor(String nombre, int ganancias) {
+    public Vendedor(String nombre) {
         this.nombre = nombre;
-        this.ganancias = ganancias;
     }
     
     public void addProducto(Producto producto){
