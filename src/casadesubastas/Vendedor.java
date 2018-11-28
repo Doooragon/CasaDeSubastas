@@ -12,6 +12,19 @@ public class Vendedor {
 
     public Vendedor(String nombre) {
         this.nombre = nombre;
+        this.productos = new ArrayList<>();
+    }
+    
+    public void listarP(){
+        System.out.println("Lista de prodcutos:");
+        System.out.println("------------------------------------");
+        for(Producto p : this.productos){
+            System.out.println("Nombre: "+p.getNombre());
+            System.out.println("Precio Base: "+p.getPrecio());
+            System.out.println("Pujas:");
+            p.listarPujas();
+            System.out.println("-----");
+        }
     }
     
     public void addProducto(Producto producto){

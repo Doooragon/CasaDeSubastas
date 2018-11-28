@@ -11,12 +11,20 @@ public class Producto {
     private Vendedor propietario;
     private HashMap<Comprador, Integer> pujas;
 
-    public Producto(String nombre, int anio, int precio, Vendedor propietario) {
+    public Producto(String nombre, int precio, Vendedor propietario) {
         this.nombre = nombre;
         this.precio = precio;
         this.propietario = propietario;
+        this.pujas = new HashMap<>();
     }
-
+    
+    public void listarPujas(){
+        System.out.println("     Comprador      ---      Última Puja");
+        for(Comprador c : this.pujas.keySet()){
+            System.out.println(c.getNombre() + "  ---  " + this.pujas.get(c));
+        }
+    }
+    
     public void addPuja(Comprador comprador, int puja){
         pujas.put(comprador, puja);
     }

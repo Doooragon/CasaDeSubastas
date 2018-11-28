@@ -13,6 +13,11 @@ public class Comprador {
     public Comprador(String nombre, int saldo) {
         this.nombre = nombre;
         this.saldo = saldo;
+        this.compras = new ArrayList<>();
+    }
+    
+    public void listarCompras(){
+        
     }
     
     public void addProducto(Producto producto){
