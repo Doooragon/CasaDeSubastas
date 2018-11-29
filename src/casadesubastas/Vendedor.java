@@ -16,11 +16,12 @@ public class Vendedor {
     }
     
     public void listarP(){
-        System.out.println("Lista de prodcutos:");
+        System.out.println("Lista de productos:");
         System.out.println("------------------------------------");
         for(Producto p : this.productos){
-            System.out.println("Nombre: "+p.getNombre());
-            System.out.println("Precio Base: "+p.getPrecio());
+            System.out.println("Nombre: " + p.getNombre());
+            System.out.println("Código: " + p.getCodigo());
+            System.out.println("Precio Base: " + p.getPrecio());
             System.out.println("Pujas:");
             p.listarPujas();
             System.out.println("-----");
