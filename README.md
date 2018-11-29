@@ -3,11 +3,11 @@
 Menú inicio:
 
           CASA DE SUBASTAS
-------------------------------------
+ ------------------------------------
 1. Ingresar como vendedor
 2. Ingresar como comprador
 3. Ingresar como observador
-------------------------------------
+ ------------------------------------
 > 
 
 Vendedor: Pon productos en la subasta y dales un precio base.
