@@ -10,9 +10,22 @@ public class Vendedor {
     private int ganancias;
     private ArrayList<Producto> productos;
 
-    public Vendedor(String nombre, int ganancias) {
+    public Vendedor(String nombre) {
         this.nombre = nombre;
-        this.ganancias = ganancias;
+        this.productos = new ArrayList<>();
+    }
+    
+    public void listarP(){
+        System.out.println("Lista de productos:");
+        System.out.println("------------------------------------");
+        for(Producto p : this.productos){
+            System.out.println("Nombre: " + p.getNombre());
+            System.out.println("Código: " + p.getCodigo());
+            System.out.println("Precio Base: " + p.getPrecio());
+            System.out.println("Pujas:");
+            p.listarPujas();
+            System.out.println("-----");
+        }
     }
     
     public void addProducto(Producto producto){

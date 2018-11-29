@@ -13,6 +13,19 @@ public class Comprador {
     public Comprador(String nombre, int saldo) {
         this.nombre = nombre;
         this.saldo = saldo;
+        this.compras = new ArrayList<>();
+    }
+    
+    public void listarCompras(){
+        System.out.println("Lista de últimas pujas hechas:");
+        System.out.println("------------------------------------");
+        for(Producto p : this.compras){
+            System.out.println("Nombre: " + p.getNombre());
+            System.out.print("Última Puja: " + p.getPujas().get(this));
+        }
+        System.out.println("------------------------------------");
+        System.out.println("Saldo en tu cuenta: " + this.saldo);
+        System.out.println("------------------------------------");
     }
     
     public void addProducto(Producto producto){
