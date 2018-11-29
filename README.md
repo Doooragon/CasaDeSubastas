@@ -1,4 +1,4 @@
-Proyecto: Casa De Subastas
+ Proyecto: Casa De Subastas
 
 Menú inicio:
 
